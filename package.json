@@ -16,11 +16,11 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rimraf ./dist && mkdir dist",
     "prestart": "npm run clean",
-    "start": "gulp",
-    "prewatch": "npm run clean",
+    "build": "gulp",
+    "prebuild": "npm run clean",
     "watch": "gulp watch",
     "server": "cd dist && live-server",
-    "development": "npm-run-all --parallel watch server"
+    "start": "npm-run-all --parallel watch server"
   },
   "author": "Gonzalo Pozzo",
   "license": "ISC"
