@@ -1,0 +1,27 @@
+{
+  "name": "html-with-templates",
+  "version": "0.0.1",
+  "description": "HTML with nunjucks templates",
+  "main": "index.js",
+  "dependencies": {
+    "rimraf": "^2.5.4",
+    "gulp": "^3.9.1",
+    "gulp-nunjucks-render": "^2.0.0"
+  },
+  "devDependencies": {
+    "live-server": "^1.0.0",
+    "npm-run-all": "^2.3.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rimraf ./dist && mkdir dist",
+    "prestart": "npm run clean",
+    "start": "gulp",
+    "prewatch": "npm run clean",
+    "watch": "gulp watch",
+    "server": "cd dist && live-server",
+    "development": "npm-run-all --parallel watch server"
+  },
+  "author": "Gonzalo Pozzo",
+  "license": "ISC"
+}
