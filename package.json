@@ -1,6 +1,6 @@
 {
   "name": "html-with-templates",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "HTML with nunjucks templates",
   "main": "index.js",
   "dependencies": {
