@@ -1,6 +1,6 @@
 {
   "name": "html-with-templates",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "HTML with nunjucks templates",
   "main": "index.js",
   "dependencies": {
@@ -15,8 +15,8 @@
   "scripts": {
     "clean": "rimraf ./dist && mkdir dist",
     "prestart": "npm run clean",
-    "start": "npm-run-all --parallel watch server",    
-    "prebuild": "npm run clean",    
+    "start": "npm-run-all --parallel watch server",
+    "prebuild": "npm run clean",
     "build": "gulp",
     "watch": "gulp watch",
     "server": "cd dist && live-server"
