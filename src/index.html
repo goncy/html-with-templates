@@ -1,11 +1,12 @@
 <html lang="es">
-    <head>
-        <title>Hola mundo</title>
-        <meta charset="UTF-8">
-        <link href="assets/style.css" rel="stylesheet">
-    </head>
-    <body>
-        <h1>Hola mundo con templates</h1>
-    </body>
-    {% include "partials/footer.tpl" %}
+  <head>
+    <title>Hola mundo</title>
+    <meta charset="UTF-8">
+    <link href="assets/style.css" rel="stylesheet">
+  </head>
+  <body>
+    {% include "partials/header.tpl" %}                
+    <h1>This is my page content</h1>
+    {% include "partials/footer.tpl" %}        
+  </body>
 </html>

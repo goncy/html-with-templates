@@ -13,14 +13,13 @@
     "npm-run-all": "^2.3.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rimraf ./dist && mkdir dist",
     "prestart": "npm run clean",
+    "start": "npm-run-all --parallel watch server",    
+    "prebuild": "npm run clean",    
     "build": "gulp",
-    "prebuild": "npm run clean",
     "watch": "gulp watch",
-    "server": "cd dist && live-server",
-    "start": "npm-run-all --parallel watch server"
+    "server": "cd dist && live-server"
   },
   "author": "Gonzalo Pozzo",
   "license": "ISC"
