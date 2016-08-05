@@ -13,7 +13,7 @@
     "npm-run-all": "^2.3.0"
   },
   "scripts": {
-    "clean": "rimraf ./dist && mkdir dist",
+    "clean": "rimraf ./dist/**/* && mkdir dist",
     "prestart": "npm run clean",
     "start": "npm-run-all --parallel watch server",
     "prebuild": "npm run clean",

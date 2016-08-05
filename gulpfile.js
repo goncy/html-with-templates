@@ -13,7 +13,7 @@ gulp.task('assets', function () {
 });
 
 gulp.task('watch', ['default'], function () {
-  gulp.watch('src/**/*(.html|.tpl)', ['default']);
+  gulp.watch(['src/**/*.tpl', 'src/**/*.html'], ['default']);
 });
 
 gulp.task('default', ['nunjucks', 'assets']);
